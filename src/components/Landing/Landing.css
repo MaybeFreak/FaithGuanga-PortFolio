@@ -1,15 +1,33 @@
-#LandingBackground {
+#LandingBackgroundRose {
   height: 100dvh;
   background: var(--color-rose);
 }
 
-#LandingBackground::after {
-  content: "";
+.wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  filter: drop-shadow(1px 6px 3px rgba(0, 0, 0, 0.5));
+}
+
+#LandingBackgroundBlue {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   background: var(--color-blue);
-  clip-path: polygon(100% 0, 100% 30%, 30% 100%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 20%, 20% 100%, 0 100%, 0 0);
+}
+
+.intro {
+  margin-top: 25dvh;
+  margin-left: 25dvw;
+}
+
+.intro h1 {
+  font-size: 8rem;
+  line-height: 0.8;
 }
