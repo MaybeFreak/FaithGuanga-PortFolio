@@ -1,0 +1,47 @@
+@import "./styles/_globals.css";
+
+@font-face {
+  font-family: "Britannic-Bold";
+  src: url("./assets/fonts/Britannic_Bold_Regular") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Scala-Sans-Italic";
+  src: url("./assets/fonts/ScalaSans-RegularItalic.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Scala-Sans";
+  src: url("./assets/fonts/ScalaSans-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-family: "Scala-Sans", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Britannic-Bold", serif;
+}

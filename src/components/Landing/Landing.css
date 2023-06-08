@@ -1,0 +1,15 @@
+#LandingBackground {
+  height: 100dvh;
+  background: var(--color-rose);
+}
+
+#LandingBackground::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: var(--color-blue);
+  clip-path: polygon(100% 0, 100% 30%, 30% 100%, 0 100%, 0 0);
+}
