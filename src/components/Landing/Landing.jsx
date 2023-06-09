@@ -50,7 +50,12 @@ const Landing = () => {
             <h1>Guanga</h1>
             <h2>Artist and Graphics Designer</h2>
           </div>
-          <nav style={{ transform: ` rotate(-${slopeAngle}deg)` }}>
+          {/*  */}
+          <nav
+            style={{
+              transform: `translate(-50%,50%) rotate(-${slopeAngle}deg)`,
+            }}
+          >
             <button>About</button>
             <button>Resume</button>
             <button>Projects</button>

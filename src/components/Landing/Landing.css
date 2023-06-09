@@ -31,3 +31,23 @@
   font-size: 8rem;
   line-height: 0.8;
 }
+
+#LandingBackgroundBlue nav {
+  position: fixed;
+  bottom: 0;
+  left: 20%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 5rem;
+}
+
+#LandingBackgroundBlue nav button {
+  background: none;
+  border: none;
+
+  font-size: 2rem;
+  opacity: 0.5;
+  transform: translate(50vw, -60%);
+}
