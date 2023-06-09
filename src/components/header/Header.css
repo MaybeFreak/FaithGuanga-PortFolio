@@ -7,6 +7,7 @@ header {
   font-size: 1.25rem;
 
   background: var(--color-blue);
+  border-bottom: solid 5px var(--color-rose);
 }
 
 header nav {

@@ -1,11 +1,24 @@
 import { gsap } from "gsap";
 import "./Landing.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Landing = () => {
+  const [slopeAngle, setSlopeAngle] = useState(0);
   const bgTl = new gsap.timeline();
 
+  const updateSlopeAngle = () => {
+    const rise = window.innerHeight * 0.8;
+    const run = window.innerWidth * 0.8;
+    setSlopeAngle((Math.atan(rise / run) * 180) / Math.PI);
+  };
+
   useEffect(() => {
+    const rise = window.innerHeight * 0.8;
+    const run = window.innerWidth * 0.8;
+    setSlopeAngle((Math.atan(rise / run) * 180) / Math.PI);
+
+    window.addEventListener("resize", updateSlopeAngle);
+
     bgTl.from(
       "#LandingBackgroundBlue",
       {
@@ -37,6 +50,12 @@ const Landing = () => {
             <h1>Guanga</h1>
             <h2>Artist and Graphics Designer</h2>
           </div>
+          <nav style={{ transform: ` rotate(-${slopeAngle}deg)` }}>
+            <button>About</button>
+            <button>Resume</button>
+            <button>Projects</button>
+            <button>Contact</button>
+          </nav>
         </div>
       </div>
     </main>

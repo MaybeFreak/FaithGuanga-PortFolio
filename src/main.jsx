@@ -6,6 +6,6 @@ import Landing from "./components/Landing/Landing";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <Landing />
+    <Landing></Landing>
   </BrowserRouter>
 );
