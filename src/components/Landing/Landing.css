@@ -41,13 +41,23 @@
   flex-direction: row;
   justify-content: space-evenly;
   gap: 5rem;
+
+  background: var(--color-blue);
 }
 
 #LandingBackgroundBlue nav button {
   background: none;
   border: none;
 
-  font-size: 2rem;
+  font-size: 3rem;
+  font-family: "Britannic-Bold";
   opacity: 0.5;
   transform: translate(50vw, -60%);
+
+  transition: all 0.5s;
+}
+
+#LandingBackgroundBlue nav button:hover {
+  cursor: pointer;
+  opacity: 1;
 }

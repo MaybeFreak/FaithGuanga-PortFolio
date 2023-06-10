@@ -1,9 +1,11 @@
 import { gsap } from "gsap";
 import "./Landing.css";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
   const [slopeAngle, setSlopeAngle] = useState(0);
+  const navigate = useNavigate();
   const bgTl = new gsap.timeline();
 
   const updateSlopeAngle = () => {
@@ -38,7 +40,28 @@ const Landing = () => {
       },
       "-=1"
     );
+    bgTl.from("nav", { opacity: 0 }, "-=1");
   }, []);
+
+  const transition = (to) => {
+    bgTl.to("nav", { opacity: 0 });
+    bgTl.to(".intro", { opacity: 0 });
+    bgTl.to("#LandingBackgroundBlue", {
+      clipPath: "polygon(100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 0%)",
+      ease: "power3.in",
+    });
+    bgTl.call(
+      () => {
+        navigate(to);
+      },
+      [],
+      "+=0.5"
+    );
+  };
+
+  const linkTo = (to) => {
+    transition(to);
+  };
 
   return (
     <main>
@@ -56,10 +79,10 @@ const Landing = () => {
               transform: `translate(-50%,50%) rotate(-${slopeAngle}deg)`,
             }}
           >
-            <button>About</button>
-            <button>Resume</button>
-            <button>Projects</button>
-            <button>Contact</button>
+            <button onClick={() => linkTo("about")}>About</button>
+            <button onClick={() => linkTo("resume")}>Resume</button>
+            <button onClick={() => linkTo("projects")}>Projects</button>
+            <button onClick={() => linkTo("contact")}>Contact</button>
           </nav>
         </div>
       </div>
