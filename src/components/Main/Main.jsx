@@ -44,7 +44,7 @@ const Main = ({ children }) => {
   }, []);
 
   const changeContent = (to) => {
-    if (window.location.pathname != `/${to}`) {
+    if (window.location.pathname != to) {
       const transitionTL = new gsap.timeline();
 
       transitionTL.to("#MainContent", { opacity: 0 });
