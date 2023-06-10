@@ -1,9 +1,9 @@
 import { gsap } from "gsap";
-import "./Landing.css";
+import "./Main.css";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Landing = ({ children }) => {
+const Main = ({ children }) => {
   const [slopeAngle, setSlopeAngle] = useState(0);
   const navigate = useNavigate();
   const bgTl = new gsap.timeline();
@@ -22,7 +22,7 @@ const Landing = ({ children }) => {
     window.addEventListener("resize", updateSlopeAngle);
 
     bgTl.from(
-      "#LandingBackgroundBlue",
+      "#MainBackgroundBlue",
       {
         clipPath: "polygon(100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 0%)",
         duration: 2,
@@ -43,46 +43,25 @@ const Landing = ({ children }) => {
     bgTl.from("nav", { opacity: 0 }, "-=1");
   }, []);
 
-  const transition = (to) => {
-    bgTl.to("nav", { opacity: 0 });
-    bgTl.to(".intro", { opacity: 0 });
-    bgTl.to("#LandingBackgroundBlue", {
-      clipPath: "polygon(100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 0%)",
-      ease: "power3.in",
-    });
-    bgTl.call(
-      () => {
-        navigate(to);
-      },
-      [],
-      "+=0.5"
-    );
-  };
-
   const linkTo = (to) => {
-    transition(to);
+    navigate(to);
   };
 
   return (
     <main>
-      <div id="LandingBackgroundRose" />
+      <div id="MainBackgroundRose" />
       <div className="wrap">
-        <div id="LandingBackgroundBlue">
-          {children}
-          <div className="intro">
-            <h1>Faith</h1>
-            <h1>Guanga</h1>
-            <h2>Artist and Graphics Designer</h2>
-          </div>
+        <div id="MainBackgroundBlue">
+          <div id="MainContent">{children}</div>
           <nav
             style={{
               transform: `translate(-50%,50%) rotate(-${slopeAngle}deg)`,
             }}
           >
             <button onClick={() => linkTo("about")}>About</button>
+            <button onClick={() => linkTo("contact")}>Contact</button>
             <button onClick={() => linkTo("resume")}>Resume</button>
             <button onClick={() => linkTo("projects")}>Projects</button>
-            <button onClick={() => linkTo("contact")}>Contact</button>
           </nav>
         </div>
       </div>
@@ -90,4 +69,4 @@ const Landing = ({ children }) => {
   );
 };
 
-export default Landing;
+export default Main;
