@@ -31,7 +31,7 @@ const Main = ({ children }) => {
       0.5
     );
     bgTl.from(
-      ".intro",
+      "#MainContent",
       {
         opacity: 0,
         y: 20,
@@ -43,8 +43,17 @@ const Main = ({ children }) => {
     bgTl.from("nav", { opacity: 0 }, "-=1");
   }, []);
 
-  const linkTo = (to) => {
-    navigate(to);
+  const changeContent = (to) => {
+    console.log(window.location.pathname);
+    if (window.location.pathname != `/${to}`) {
+      const transitionTL = new gsap.timeline();
+
+      transitionTL.to("#MainContent", { opacity: 0 });
+      transitionTL.call(() => {
+        navigate(to);
+      });
+      transitionTL.to("#MainContent", { opacity: 1 });
+    }
   };
 
   return (
@@ -58,10 +67,10 @@ const Main = ({ children }) => {
               transform: `translate(-50%,50%) rotate(-${slopeAngle}deg)`,
             }}
           >
-            <button onClick={() => linkTo("about")}>About</button>
-            <button onClick={() => linkTo("contact")}>Contact</button>
-            <button onClick={() => linkTo("resume")}>Resume</button>
-            <button onClick={() => linkTo("projects")}>Projects</button>
+            <button onClick={() => changeContent("about")}>About</button>
+            <button onClick={() => changeContent("contact")}>Contact</button>
+            <button onClick={() => changeContent("resume")}>Resume</button>
+            <button onClick={() => changeContent("projects")}>Projects</button>
           </nav>
         </div>
       </div>

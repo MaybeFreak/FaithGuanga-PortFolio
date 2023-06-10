@@ -3,26 +3,20 @@ import { useEffect } from "react";
 
 const About = () => {
   const tl = new gsap.timeline();
+
   useEffect(() => {
-    tl.delay(1);
-    tl.fromTo(
-      "#TransitionElement",
-      {
-        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      },
-      {
-        clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-        duration: 1,
-        ease: "power2.inOut",
-      }
-    );
+    tl.from("#AboutContent", { opacity: 0 });
   }, []);
 
   return (
-    <>
-      <div id="TransitionElement" />
-      <main>This is the About page</main>
-    </>
+    <div id="AboutContent">
+      Hi! My name is Faith and I am an artist and graphic designer living near
+      Boston, MA. I am known for my work at Ploughshares creating ads and social
+      graphics to promote their seasonal publications. I also have experience
+      designing and formatting books from both my design classes and college
+      organization and enjoy creating digital art during my free time. I look
+      forward to designing for you!
+    </div>
   );
 };
 

@@ -22,12 +22,12 @@
   clip-path: polygon(100% 0, 100% 20%, 20% 100%, 0 100%, 0 0);
 }
 
-.intro {
+#MainContent {
   margin-top: 20dvw;
   margin-left: 20dvw;
 }
 
-.intro h1 {
+#MainContent h1 {
   font-size: 8rem;
   line-height: 0.8;
 }

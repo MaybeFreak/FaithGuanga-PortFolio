@@ -24,7 +24,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         path="about"
         element={
           <Main>
-            <div>About</div>
+            <About />
           </Main>
         }
       />
