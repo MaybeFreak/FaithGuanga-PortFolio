@@ -5,6 +5,7 @@ import Header from "./components/header/Header";
 import About from "./components/About/About";
 import Main from "./components/Main/Main";
 import Landing from "./components/Landing/Landing";
+import Contact from "./components/Contact/Contact";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -22,6 +23,14 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         element={
           <Main>
             <About />
+          </Main>
+        }
+      />
+      <Route
+        path="contact"
+        element={
+          <Main>
+            <Contact />
           </Main>
         }
       />

@@ -66,10 +66,10 @@ const Main = ({ children }) => {
               transform: `translate(-50%,50%) rotate(-${slopeAngle}deg)`,
             }}
           >
-            <button onClick={() => changeContent("about")}>About</button>
-            <button onClick={() => changeContent("contact")}>Contact</button>
-            <button onClick={() => changeContent("resume")}>Resume</button>
-            <button onClick={() => changeContent("projects")}>Projects</button>
+            <button onClick={() => changeContent("/about")}>About</button>
+            <button onClick={() => changeContent("/contact")}>Contact</button>
+            <button onClick={() => changeContent("/resume")}>Resume</button>
+            <button onClick={() => changeContent("/projects")}>Projects</button>
           </nav>
         </div>
       </div>
