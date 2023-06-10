@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/header/Header";
 import About from "./components/About/About";
 import Main from "./components/Main/Main";
+import Landing from "./components/Landing/Landing";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -12,11 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         index
         element={
           <Main>
-            <div className="intro">
-              <h1>Faith</h1>
-              <h1>Guanga</h1>
-              <h2>Artist and Graphics Designer</h2>
-            </div>
+            <Landing />
           </Main>
         }
       />

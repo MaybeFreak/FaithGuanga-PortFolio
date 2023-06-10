@@ -44,7 +44,6 @@ const Main = ({ children }) => {
   }, []);
 
   const changeContent = (to) => {
-    console.log(window.location.pathname);
     if (window.location.pathname != `/${to}`) {
       const transitionTL = new gsap.timeline();
 
