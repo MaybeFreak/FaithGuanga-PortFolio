@@ -13,7 +13,7 @@ const Landing = () => {
     <div id="LandingContent">
       <h1>Faith</h1>
       <h1>Guanga</h1>
-      <h2>Artist and Graphics Designer</h2>
+      <p>Graphic Design & Production</p>
     </div>
   );
 };

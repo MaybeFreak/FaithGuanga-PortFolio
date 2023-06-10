@@ -2,6 +2,7 @@ import { gsap } from "gsap";
 import "./Main.css";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import MainHeader from "./MainHeader";
 
 const Main = ({ children }) => {
   const [slopeAngle, setSlopeAngle] = useState(0);
@@ -66,13 +67,30 @@ const Main = ({ children }) => {
               transform: `translate(-50%,50%) rotate(-${slopeAngle}deg)`,
             }}
           >
-            <button onClick={() => changeContent("/about")}>About</button>
-            <button onClick={() => changeContent("/contact")}>Contact</button>
+            <button
+              className={
+                window.location.pathname === "/about" ? "currentLocation" : ""
+              }
+              onClick={() => changeContent("/about")}
+            >
+              About
+            </button>
             <button onClick={() => changeContent("/resume")}>Resume</button>
             <button onClick={() => changeContent("/projects")}>Projects</button>
+            <button
+              className={
+                window.location.pathname === "/contact" ? "currentLocation" : ""
+              }
+              onClick={() => changeContent("/contact")}
+            >
+              Contact
+            </button>
           </nav>
         </div>
       </div>
+      {window.location.pathname !== "/" && (
+        <MainHeader changeContent={() => changeContent("/")} />
+      )}
     </main>
   );
 };

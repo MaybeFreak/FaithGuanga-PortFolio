@@ -1,0 +1,29 @@
+#ContactContent h2 {
+  font-size: 5rem;
+  color: var(--color-rose);
+}
+
+#ContactSub {
+  font-size: 1.5rem;
+  line-height: 0.5;
+}
+
+#ContactInfo {
+  max-width: max-content;
+  margin-top: 2.5rem;
+}
+
+#ContactInfo p {
+  font-size: 2rem;
+}
+
+#ContactInfo a {
+  color: var(--color-white);
+  text-decoration: none;
+
+  transition: all 0.5s;
+}
+
+#ContactInfo a:hover {
+  text-decoration: underline;
+}

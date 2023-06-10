@@ -1,3 +1,21 @@
+#Name {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  cursor: pointer;
+}
+
+#Name span {
+  font-size: 1.25rem;
+  font-family: Scala-sans;
+  padding-left: 12px;
+  border-left: 2px solid var(--color-white);
+}
+
 #MainBackgroundRose {
   height: 100dvh;
   background: var(--color-rose);
@@ -23,8 +41,9 @@
 }
 
 #MainContent {
-  margin-top: 20dvw;
+  margin-top: 15dvw;
   margin-left: 20dvw;
+  margin-right: 5dvw;
 }
 
 #MainBackgroundBlue nav {
@@ -48,8 +67,14 @@
   font-family: "Britannic-Bold";
   opacity: 0.5;
   transform: translate(50vw, -60%);
+  border-bottom: 5px solid transparent;
 
   transition: all 0.5s;
+}
+
+#MainBackgroundBlue nav button.currentLocation {
+  border-bottom: 5px solid var(--color-rose);
+  opacity: 1;
 }
 
 #MainBackgroundBlue nav button:hover {
