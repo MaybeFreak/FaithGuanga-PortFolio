@@ -12,7 +12,7 @@ header {
   font-size: 1.25rem;
 
   background: var(--color-blue);
-  border-bottom: solid 5px var(--color-rose);
+  /* border-bottom: solid 5px var(--color-rose); */
 }
 
 header nav {
@@ -22,4 +22,30 @@ header nav {
 
   padding-left: 2rem;
   border-left: 2px solid var(--color-white);
+}
+
+header nav p {
+  cursor: pointer;
+  opacity: 0.75;
+  transition: all 0.5s;
+}
+
+header nav p:hover {
+  opacity: 1;
+}
+
+header nav p.currentLocation {
+  opacity: 1;
+  color: var(--color-rose);
+}
+
+#TransitionElement {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: var(--color-blue);
+  clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
 }

@@ -56,6 +56,21 @@ const Main = ({ children }) => {
     }
   };
 
+  const changeLayout = (to) => {
+    const transitionTl = new gsap.timeline();
+
+    transitionTl.to("nav", { opacity: 0 });
+    transitionTl.to("#MainContent", { opacity: 0 }), "<-=0.5";
+    transitionTl.to("#Name", { opacity: 0 });
+    transitionTl.to("#MainBackgroundBlue", {
+      clipPath: "polygon(100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 0%)",
+      ease: "power3.in",
+    });
+    transitionTl.call(() => {
+      navigate(to);
+    });
+  };
+
   return (
     <main>
       <div id="MainBackgroundRose" />
@@ -75,8 +90,8 @@ const Main = ({ children }) => {
             >
               About
             </button>
-            <button onClick={() => changeContent("/resume")}>Resume</button>
-            <button onClick={() => changeContent("/projects")}>Projects</button>
+            <button onClick={() => changeLayout("/resume")}>Resume</button>
+            <button onClick={() => changeLayout("/projects")}>Projects</button>
             <button
               className={
                 window.location.pathname === "/contact" ? "currentLocation" : ""

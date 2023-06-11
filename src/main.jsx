@@ -34,6 +34,14 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           </Main>
         }
       />
+      <Route
+        path="resume"
+        element={
+          <Header>
+            <div>Test</div>
+          </Header>
+        }
+      />
     </Routes>
   </BrowserRouter>
 );
