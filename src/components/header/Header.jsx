@@ -1,9 +1,11 @@
 import { gsap } from "gsap";
 import "./Header.css";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Header = ({ children }) => {
   const headerTl = new gsap.timeline();
+  const navigate = useNavigate();
 
   useEffect(() => {
     animation();
@@ -26,9 +28,38 @@ const Header = ({ children }) => {
     );
   };
 
-  const changeContent = () => {};
+  const changeContent = (to) => {
+    const transitionTl = new gsap.timeline();
 
-  const changeLayout = () => {};
+    transitionTl.fromTo(
+      "#TransitionElement",
+      { clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)" },
+      {
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+      }
+    );
+    transitionTl.call(() => {
+      navigate(to);
+    });
+  };
+
+  const changeLayout = (to) => {
+    const transitionTl = new gsap.timeline();
+
+    transitionTl.fromTo(
+      "#TransitionElement",
+      { clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)" },
+      {
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        duration: 2,
+        ease: "power3.inOut",
+      }
+    );
+    transitionTl.to("header", { opacity: 0, y: "-100%" }, "-=0.5");
+    transitionTl.call(() => {
+      navigate(to);
+    });
+  };
 
   return (
     <>
