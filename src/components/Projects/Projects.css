@@ -1,0 +1,41 @@
+#ProjectPage {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+#ProjectsMenu {
+  padding-top: 2rem;
+  width: 300px;
+  background: var(--color-rose);
+  text-align: center;
+}
+
+#ProjectsMenu h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#ProjectsMenu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#ProjectsMenu button {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: 2px dashed var(--color-white);
+  border-radius: 15px;
+}
+
+#ContentTransitionElement {
+  position: absolute;
+  top: 0;
+  left: 300px;
+  right: 0;
+  bottom: 0;
+  background: var(--color-rose);
+  clip-path: polygon(0% 100%, 0 100%, 0% 0%, 0% 0%);
+}

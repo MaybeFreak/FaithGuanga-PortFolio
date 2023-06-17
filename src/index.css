@@ -47,3 +47,9 @@ h2,
 h2 {
   font-family: "Britannic-Bold";
 }
+
+#root {
+  display: flex;
+  flex-flow: column;
+  height: 100dvh;
+}
