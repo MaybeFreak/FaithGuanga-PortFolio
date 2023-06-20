@@ -39,6 +39,7 @@
 }
 
 #ContentTransitionElement {
+  z-index: 2;
   position: absolute;
   top: 0;
   left: 300px;
@@ -49,7 +50,22 @@
 }
 
 #ProjectsContent {
-  max-width: 100%;
+  padding: 2rem;
+  width: 100%;
+  overflow-y: scroll;
+
+  text-align: center;
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+#ProjectsContent h2 {
+  font-size: 3rem;
+}
+
+#ProjectsContent p {
+  font-size: 1.25rem;
+  padding-bottom: 2rem;
 }
 
 .pictureCollection {
@@ -60,11 +76,42 @@
   align-items: center;
   justify-items: center;
   gap: 2rem;
-  padding: 2rem;
 }
 
 .pictureCollection img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(0.75);
+  transition: all 0.5s;
+}
+
+.pictureCollection img:hover {
+  cursor: pointer;
+  filter: brightness(1);
+  transform: scale(1.05);
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.modalContent {
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+}
+
+.modalContent img {
+  max-width: 90dvw;
+  max-height: 90dvh;
 }
