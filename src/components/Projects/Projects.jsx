@@ -1,8 +1,9 @@
-import { useNavigate } from "react-router-dom";
+import SocialGraphics from "./Content/SocialGraphics";
 import "./Projects.css";
+import { useState } from "react";
 
 const Projects = ({ children }) => {
-  const navigate = useNavigate();
+  const [content, setContent] = useState("socialGraphics");
 
   const changeContent = () => {};
   return (
@@ -11,20 +12,20 @@ const Projects = ({ children }) => {
         <h2>Projects</h2>
         <ul>
           <li>
-            <button onClick={() => changeContent("/social-graphics")}>
+            <button onClick={() => changeContent("social-graphics")}>
               Social Graphics
             </button>
           </li>
           <li>
-            <button onClick={() => changeContent("/ads")}>Ads</button>
+            <button onClick={() => changeContent("ads")}>Ads</button>
           </li>
           <li>
-            <button onClick={() => changeContent("/book-design")}>
+            <button onClick={() => changeContent("book-design")}>
               Book Design
             </button>
           </li>
           <li>
-            <button onClick={() => changeContent("/personal-art")}>
+            <button onClick={() => changeContent("personal-art")}>
               Personal Art
             </button>
           </li>
@@ -32,7 +33,7 @@ const Projects = ({ children }) => {
       </div>
       <div id="ProjectsContent">
         <div id="ContentTransitionElement" />
-        {children}
+        {content === "socialGraphics" && <SocialGraphics />}
       </div>
     </main>
   );

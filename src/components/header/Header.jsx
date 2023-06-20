@@ -29,29 +29,31 @@ const Header = ({ children }) => {
   };
 
   const changeContent = (to) => {
-    const transitionTl = new gsap.timeline();
+    if (window.location.pathname != to) {
+      const transitionTl = new gsap.timeline();
 
-    transitionTl.fromTo(
-      "#TransitionElement",
-      { clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)" },
-      {
-        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-        duration: 1.5,
-        ease: "power3.inOut",
-      }
-    );
-    transitionTl.call(() => {
-      navigate(to);
-    });
-    transitionTl.fromTo(
-      "#TransitionElement",
-      { clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)" },
-      {
-        clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-        duration: 1.5,
-        ease: "power3.inOut",
-      }
-    );
+      transitionTl.fromTo(
+        "#TransitionElement",
+        { clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)" },
+        {
+          clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+          duration: 1.5,
+          ease: "power3.inOut",
+        }
+      );
+      transitionTl.call(() => {
+        navigate(to);
+      });
+      transitionTl.fromTo(
+        "#TransitionElement",
+        { clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)" },
+        {
+          clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+          duration: 1.5,
+          ease: "power3.inOut",
+        }
+      );
+    }
   };
 
   const changeLayout = (to) => {
