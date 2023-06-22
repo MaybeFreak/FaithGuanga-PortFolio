@@ -115,3 +115,20 @@
   max-width: 90dvw;
   max-height: 90dvh;
 }
+
+#PageSpread {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+#PageSpread img {
+  cursor: pointer;
+  width: 50%;
+  transition: transform 0.5s;
+}
+
+#PageSpread img:hover {
+  /* z-index: 5;
+  transform: scale(1.01) translateY(-5px); */
+}

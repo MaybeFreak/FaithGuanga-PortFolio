@@ -69,7 +69,7 @@ const Projects = () => {
         <div id="ContentTransitionElement" />
         {content === "socialGraphics" && <SocialGraphics />}
         {content === "ads" && <Ads />}
-        {content === "bookDesgin" && <BookDesign />}
+        {content === "bookDesign" && <BookDesign />}
         {content === "personalArt" && <PersonalArt />}
       </div>
     </main>

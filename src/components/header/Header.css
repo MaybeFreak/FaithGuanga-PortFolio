@@ -40,7 +40,7 @@ header nav p.currentLocation {
 }
 
 #TransitionElement {
-  z-index: 99;
+  z-index: 98;
   position: fixed;
   top: 0;
   left: 0;
