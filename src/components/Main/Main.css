@@ -30,7 +30,7 @@
   bottom: 0px;
   right: 0px;
   background: url("/src/assets/white_grids_svg.svg") no-repeat;
-  transform: translate(20%, 30%) rotate(90deg) scale(2);
+  transform: translate(-50%, 50%) rotate(100deg) scale(3);
 }
 
 .wrap {
