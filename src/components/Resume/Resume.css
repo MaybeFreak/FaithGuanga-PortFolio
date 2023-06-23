@@ -1,0 +1,15 @@
+main {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+#ResumeLeft {
+  width: 600px;
+  background-color: var(--color-rose);
+}
+
+#ResumeRight {
+  width: 100%;
+  background-color: var(--color-white);
+}

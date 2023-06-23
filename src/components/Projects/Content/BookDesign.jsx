@@ -48,6 +48,14 @@ const BookDesign = () => {
         assigned with designing a thirty-six paged bake book that included 3
         cake and 3 cupcake recipes.
       </p>
+      <a
+        id="BookDownload"
+        href="\src\assets\BookDesign\CookbookLayout_EmersonDesignProject.pdf"
+        download
+      >
+        Download full book
+      </a>
+
       <div className="bookDesign">
         {images.map((imagePairs, i) => (
           <PageSpread images={imagePairs} key={i} />

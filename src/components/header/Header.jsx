@@ -15,7 +15,12 @@ const Header = ({ children }) => {
     headerTl.fromTo(
       "header",
       { y: "-100%", opacity: 0 },
-      { y: 0, opacity: 1, ease: "power2.inOut", duration: 1 }
+      {
+        y: "0%",
+        opacity: 1,
+        ease: "power2.inOut",
+        duration: 1,
+      }
     );
     headerTl.to(
       "#TransitionElement",
@@ -77,7 +82,7 @@ const Header = ({ children }) => {
   return (
     <>
       <header>
-        <h1>Faith Guanga</h1>
+        <h1 onClick={() => changeLayout("/")}>Faith Guanga</h1>
         <nav>
           <p onClick={() => changeLayout("/about")}>About</p>
           <p onClick={() => changeContent("/resume")}>Resume</p>

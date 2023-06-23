@@ -7,6 +7,7 @@ import Main from "./components/Main/Main";
 import Landing from "./components/Landing/Landing";
 import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
+import Resume from "./components/Resume/Resume";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -39,7 +40,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         path="resume"
         element={
           <Header>
-            <div>Test</div>
+            <Resume />
           </Header>
         }
       />

@@ -34,6 +34,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  overflow: hidden;
 }
 
 * {
@@ -52,4 +53,11 @@ h2 {
   display: flex;
   flex-flow: column;
   height: 100dvh;
+  overflow: hidden;
+}
+
+.cls-1 {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2px;
 }

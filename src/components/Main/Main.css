@@ -18,7 +18,19 @@
 
 #MainBackgroundRose {
   height: 100dvh;
+  max-width: 100dvw;
   background: var(--color-rose);
+}
+
+#MainBackgroundRose::before {
+  content: "";
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  bottom: 0px;
+  right: 0px;
+  background: url("/src/assets/white_grids_svg.svg") no-repeat;
+  transform: translate(20%, 30%) rotate(90deg) scale(2);
 }
 
 .wrap {
@@ -27,7 +39,9 @@
   left: 0;
   bottom: 0;
   right: 0;
-  filter: drop-shadow(1px 6px 3px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(
+    1px 6px 3px rgba(0, 0, 0, 0.5)
+  ); /* rgba(49, 91, 102, 0.5) */
 }
 
 #MainBackgroundBlue {
