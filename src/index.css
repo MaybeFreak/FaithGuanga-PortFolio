@@ -61,3 +61,33 @@ h3 {
   stroke: #fff;
   stroke-width: 2px;
 }
+
+/* rgb(249, 224, 224) */
+
+::selection {
+  color: var(--color-blue);
+  background-color: rgb(249, 224, 224);
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+  color: var(--color-blue);
+  background-color: rgb(249, 224, 224);
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+  color: var(--color-blue);
+  background-color: rgb(249, 224, 224);
+}
+
+::-ms-selection {
+  color: var(--color-blue);
+  background-color: rgb(249, 224, 224);
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+  color: var(--color-blue);
+  background-color: rgb(249, 224, 224);
+}

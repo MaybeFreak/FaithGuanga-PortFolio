@@ -3,40 +3,48 @@ import PageSpread from "../PageSpread";
 const BookDesign = () => {
   const images = [
     [
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121250371004805140/2.jpg",
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121250371281637497/3.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807220141740032/2.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807220389195868/3.jpg",
     ],
     [
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121250371516506173/4.jpg",
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121250371747196938/5.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807220619878441/4.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807220842188851/5.jpg",
     ],
     [
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121250371994669088/6.jpg",
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121250372275675156/7.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807221093838859/6.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807221328715846/7.jpg",
     ],
     [
-      "https://cdn.discordapp.com/attachments/142745451207065600/1121400431516594318/FuckUFaith.jpg", // REPLACE THIS LINK
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121250372514754582/8.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807346167980092/c_h_e_e_s_e_c_a_k_e.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807221571997706/8.jpg",
     ],
     [
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121250372791586836/9.jpg",
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121250373047427163/10.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807221811064842/9.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807222062718986/10.jpg",
     ],
     [
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121250472536309810/11.jpg",
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121250472783786054/12.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807262680354937/11.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807263062044792/12.jpg",
     ],
     [
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121250473085784144/13.jpg",
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121250473345822810/14.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807263338860544/13.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807263632465920/14.jpg",
     ],
     [
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121250473605877841/15.jpg",
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121250473870098562/16.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807264018346024/15.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807264316133477/16.jpg",
     ],
     [
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121250474188877844/17.jpg",
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121250474482487346/18.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807264622325911/17.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807264899141763/18.jpg",
+    ],
+    [
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807265230499890/19.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807265532481536/20.jpg",
+    ],
+    [
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807346503532734/Cover.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1121807345551425596/21.jpg",
     ],
   ];
 

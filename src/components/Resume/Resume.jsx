@@ -5,14 +5,6 @@ const Resume = () => {
     <main className="resume">
       <div id="Resume">
         <div id="ResumeLeft">
-          <h2>CONTACT INFORMATION</h2>
-          <div>
-            <p>
-              Email:{" "}
-              <a href="mailto: fguanga1550@gmail.com">fguanga1550@gmail.com</a>
-            </p>
-            <p>Mobile: (857)-389-8683 </p>
-          </div>
           <h2>EDUCATION</h2>
           <div>
             <p>B.A. Writing, Literature, and Publishing: Publishing</p>
