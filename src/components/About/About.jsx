@@ -19,7 +19,7 @@ const About = () => {
           social graphics to promote their seasonal publications. I also have
           experience designing and formatting books from both my design classes
           and college organization and enjoy creating digital art during my free
-          time. I look forward to designing for you!
+          time. <br /> I look forward to designing for you!
         </span>
       </p>
     </div>
