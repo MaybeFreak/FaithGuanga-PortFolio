@@ -8,7 +8,9 @@ const Resume = () => {
           <h2>EDUCATION</h2>
           <div>
             <p>B.A. Writing, Literature, and Publishing: Publishing</p>
-            <em>Emerson College, Boston MA December 2023 (expected)</em>
+            <em>
+              Emerson College, Boston MA <br /> December 2023 (expected)
+            </em>
           </div>
           <div>
             <p>Inbound Marketing Certification</p>
@@ -30,10 +32,11 @@ const Resume = () => {
           </p>
           <p>
             Google Applications{" "}
-            <em>
-              (Drive, Docs, Slides, Sheets, and Forms) Social Media (Facebook
-              and Instagram)
-            </em>
+            <em>(Drive, Docs, Slides, Sheets, and Forms)</em>
+          </p>
+          <p>
+            Social Media
+            <em>(Facebook and Instagram)</em>
           </p>
         </div>
         <div id="ResumeRight">
