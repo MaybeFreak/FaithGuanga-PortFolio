@@ -3,7 +3,7 @@ import PageSpread from "../PageSpread";
 const BookDesign = () => {
   const images = [
     [
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121807220141740032/2.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1122563764043141292/2.jpg",
       "https://cdn.discordapp.com/attachments/450739294571724825/1121807220389195868/3.jpg",
     ],
     [
@@ -39,8 +39,8 @@ const BookDesign = () => {
       "https://cdn.discordapp.com/attachments/450739294571724825/1121807264899141763/18.jpg",
     ],
     [
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121807265230499890/19.jpg",
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121807265532481536/20.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1122563764303175740/19.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1122563764856832021/20.jpg",
     ],
     [
       "https://cdn.discordapp.com/attachments/450739294571724825/1121807346503532734/Cover.jpg",
