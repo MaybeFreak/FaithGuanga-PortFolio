@@ -15,7 +15,7 @@ const BookDesign = () => {
       "https://cdn.discordapp.com/attachments/450739294571724825/1121807221328715846/7.jpg",
     ],
     [
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121807346167980092/c_h_e_e_s_e_c_a_k_e.jpg",
+      "https://cdn.discordapp.com/attachments/450739294571724825/1132762475037728879/c_h_e_e_s_e_c_a_k_e.jpg",
       "https://cdn.discordapp.com/attachments/450739294571724825/1121807221571997706/8.jpg",
     ],
     [
@@ -42,10 +42,6 @@ const BookDesign = () => {
       "https://cdn.discordapp.com/attachments/450739294571724825/1122563764303175740/19.jpg",
       "https://cdn.discordapp.com/attachments/450739294571724825/1122563764856832021/20.jpg",
     ],
-    [
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121807346503532734/Cover.jpg",
-      "https://cdn.discordapp.com/attachments/450739294571724825/1121807345551425596/21.jpg",
-    ],
   ];
 
   return (
@@ -65,9 +61,19 @@ const BookDesign = () => {
       </a>
 
       <div className="bookDesign">
+        <img
+          className="single"
+          src="https://cdn.discordapp.com/attachments/450739294571724825/1132762475322953879/Cover.jpg"
+          alt=""
+        />
         {images.map((imagePairs, i) => (
           <PageSpread images={imagePairs} key={i} />
         ))}
+        <img
+          className="single"
+          src="https://cdn.discordapp.com/attachments/450739294571724825/1121807345551425596/21.jpg"
+          alt=""
+        />
       </div>
     </div>
   );

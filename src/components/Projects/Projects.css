@@ -166,4 +166,8 @@
 
 .bookDesign {
   margin-top: 2rem;
+
+  > .single {
+    margin-bottom: 2rem;
+  }
 }
